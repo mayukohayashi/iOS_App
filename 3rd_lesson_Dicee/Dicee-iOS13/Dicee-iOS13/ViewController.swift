@@ -17,11 +17,11 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        diceImageView1.image = #imageLiteral(resourceName: "DiceSix")
-        diceImageView2.image = #imageLiteral(resourceName: "DiceTwo")
+        // diceImageView1.image = #imageLiteral(resourceName: "DiceSix")
+        // diceImageView2.image = #imageLiteral(resourceName: "DiceTwo")
         
-        //Who           What   Value
-        diceImageView1.alpha = 0.5
+        // Who           What   Value
+        // diceImageView1.alpha = 0.5
         
         
 
@@ -33,8 +33,10 @@ class ViewController: UIViewController {
         // print("Button got pressed")
         
         // after pressed, dice number will change
-        diceImageView1.image = #imageLiteral(resourceName: "DiceFour")
-        diceImageView2.image = #imageLiteral(resourceName: "DiceFour")
+        // diceImageView1.image = #imageLiteral(resourceName: "DiceFour")
+        // diceImageView2.image = #imageLiteral(resourceName: "DiceFour")
+       diceImageView1.image = [ #imageLiteral(resourceName: "DiceOne"), #imageLiteral(resourceName: "DiceTwo"), #imageLiteral(resourceName: "DiceThree"), #imageLiteral(resourceName: "DiceFour"), #imageLiteral(resourceName: "DiceFive"), #imageLiteral(resourceName: "DiceSix") ][ 1 ]
+        
 
     }
     
