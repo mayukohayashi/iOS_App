@@ -14,6 +14,10 @@ class ViewController: UIViewController {
     @IBOutlet weak var diceImageView1: UIImageView!
     @IBOutlet weak var diceImageView2: UIImageView!
     
+    // show number is 2
+    var leftDiceNumber = 1
+    var rightDiceNumber = 5
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -35,7 +39,20 @@ class ViewController: UIViewController {
         // after pressed, dice number will change
         // diceImageView1.image = #imageLiteral(resourceName: "DiceFour")
         // diceImageView2.image = #imageLiteral(resourceName: "DiceFour")
-       diceImageView1.image = [ #imageLiteral(resourceName: "DiceOne"), #imageLiteral(resourceName: "DiceTwo"), #imageLiteral(resourceName: "DiceThree"), #imageLiteral(resourceName: "DiceFour"), #imageLiteral(resourceName: "DiceFive"), #imageLiteral(resourceName: "DiceSix") ][ 1 ]
+      
+        print("the biggining of dice number = \(leftDiceNumber)")
+        
+        diceImageView1.image = [ #imageLiteral(resourceName: "DiceOne"), #imageLiteral(resourceName: "DiceTwo"), #imageLiteral(resourceName: "DiceThree"), #imageLiteral(resourceName: "DiceFour"), #imageLiteral(resourceName: "DiceFive"), #imageLiteral(resourceName: "DiceSix") ][leftDiceNumber]
+        diceImageView2.image = [ #imageLiteral(resourceName: "DiceOne"), #imageLiteral(resourceName: "DiceTwo"), #imageLiteral(resourceName: "DiceThree"), #imageLiteral(resourceName: "DiceFour"), #imageLiteral(resourceName: "DiceFive"), #imageLiteral(resourceName: "DiceSix") ][rightDiceNumber]
+
+        
+        leftDiceNumber = leftDiceNumber + 1
+        rightDiceNumber = rightDiceNumber - 1
+        
+        print("the end of dice number = \(leftDiceNumber)")
+        
+        
+
         
 
     }
