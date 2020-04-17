@@ -18,8 +18,6 @@ class ViewController: UIViewController {
     var leftDiceNumber = 1
     var rightDiceNumber = 5
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
         
         // diceImageView1.image = #imageLiteral(resourceName: "DiceSix")
         // diceImageView2.image = #imageLiteral(resourceName: "DiceTwo")
