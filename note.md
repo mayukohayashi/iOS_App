@@ -22,3 +22,24 @@
 
 ### String Interpolation
 - `print("Text \(2+3) Text")`
+
+### Basic Data Types
+- String
+    "Mayuko"
+- Int (Integer)
+    123
+- Float (Floating Point Number)
+    12.345
+- Double
+    3.14159265359
+- Bool (Boolean)
+    true / false
+
+### Randomness in Swift
+- Random Int
+    Int.random(in: lower ... upper)
+- Bool.random()
+- array.randomElement()
+- array.shuffle()
+
+

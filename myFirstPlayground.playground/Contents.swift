@@ -50,3 +50,42 @@ var computedNumbers = [
 
 
 print(computedNumbers)
+
+
+// Constants
+let constantsNumber = 123
+print("my constant number is \(constantsNumber)")
+
+
+// Random
+let randomNumber = Int.random(in: 1 ... 100)
+print(randomNumber)
+
+let randomFloat = Float.random(in: 1 ... 3)
+print(randomFloat)
+
+    // Random but exclude upper (↓の場合1,2しかでない)
+    let randomNumberUpper = Int.random(in: 1 ..< 3)
+    print(randomNumberUpper)
+
+
+/*
+ You are going to create a password generator. We have created an array called alphabet which contains all 26 letters in the alphabet.
+ Write some code to randomly pick 6 letters out of the alphabet to create a random 6 character password.
+ Once you're happy with your code, run it to see if it works as expected.
+ HINT: You can add characters together with the "+" symbol. e.g.
+ */
+
+let alphabet = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"]
+
+var p = alphabet[Int.random(in: 0...25)]
+var ass = alphabet[Int.random(in: 0...25)]
+var wo = alphabet[Int.random(in: 0...25)]
+var rd = alphabet[Int.random(in: 0...25)]
+var isr = alphabet[Int.random(in: 0...25)]
+var and = alphabet[Int.random(in: 0...25)]
+
+var password = p + ass + wo + rd + isr + and
+
+print(password)
+
